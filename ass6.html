@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script> function myFunction() { window.alert(d);}
+        function myFunction1() { window.alert(dateObj);}
+        function myFunction2() { window.alert(date1);}
+         function myFunction3() { window.alert(date2);}</script>
+   
+     </head>
+<body>
+    
+        <script>
+
+ var d = new Date();
+ var dateObj = new Date(); 
+dateObj.setDate(dateObj.getDate() - 1); 
+ var date1 = new Date(); 
+date1.setDate(date1.getDate() - 7); 
+
+ var date2 = new Date(); 
+date2.setFullYear(date2.getFullYear - 10); 
+ </script>
+<button onclick="myFunction()">current</button>
+ <button onclick="myFunction1()">yesterday</button>
+ <button onclick="myFunction2()">week</button>
+ <button onclick="myFunction3()">10 years</button>
+
+    </body>
+</html>
